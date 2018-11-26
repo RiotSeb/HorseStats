@@ -1,0 +1,5 @@
+prefix: "&7[&9HorseSpeed&7] &r"
+player only: "&cYou may use this command as player only."
+no permissions: "&cYou do not have enough permissions to do that."
+not riding a horse: "&cYou aren't riding a measurable entity."
+stats: "&eThe entity you are riding has the following stats:"

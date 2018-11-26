@@ -1,0 +1,11 @@
+name: ${project.name}
+author: ${author}
+version: ${project.version}(built ${timestamp})
+main: ${project.groupId}.${project.artifactId}.HorseSpeedMain
+
+api-version: 1.13
+
+commands:
+  horsespeed:
+    description: "Show's current stats for the entity you are currently riding"
+    aliases: ['hs']
