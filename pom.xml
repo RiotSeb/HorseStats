@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.riotseb</groupId>
-	<artifactId>horsespeed</artifactId>
+	<artifactId>horsestats</artifactId>
 	<version>1.0</version>
-	<name>HorseSpeed</name>
+	<name>HorseStats</name>
 	<packaging>jar</packaging>
 
 	<properties>

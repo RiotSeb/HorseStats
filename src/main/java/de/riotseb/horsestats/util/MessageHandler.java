@@ -1,6 +1,6 @@
-package de.riotseb.horsespeed.util;
+package de.riotseb.horsestats.util;
 
-import de.riotseb.horsespeed.HorseSpeedMain;
+import de.riotseb.horsestats.HorseStatsMain;
 import lombok.experimental.UtilityClass;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -10,7 +10,7 @@ import java.io.File;
 @UtilityClass
 public class MessageHandler {
 
-	private static File messageFile = new File(HorseSpeedMain.getInstance().getDataFolder() + File.separator + "messages.yml");
+	private static File messageFile = new File(HorseStatsMain.getInstance().getDataFolder() + File.separator + "messages.yml");
 	private static YamlConfiguration config = YamlConfiguration.loadConfiguration(messageFile);
 
 	public String getMessage(String key) {

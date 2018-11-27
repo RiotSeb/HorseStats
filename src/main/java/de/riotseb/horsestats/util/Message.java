@@ -1,4 +1,4 @@
-package de.riotseb.horsespeed.util;
+package de.riotseb.horsestats.util;
 
 public enum Message {
 

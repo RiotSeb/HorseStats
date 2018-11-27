@@ -1,7 +1,7 @@
-package de.riotseb.horsespeed.commands;
+package de.riotseb.horsestats.commands;
 
-import de.riotseb.horsespeed.HorseSpeedMain;
-import de.riotseb.horsespeed.util.Message;
+import de.riotseb.horsestats.HorseStatsMain;
+import de.riotseb.horsestats.util.Message;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 
 import java.text.DecimalFormat;
 
-public class HorseSpeedCommand implements CommandExecutor {
+public class HorseStatsCommand implements CommandExecutor {
 
 	private static final ThreadLocal<DecimalFormat> DECIMAL_FORMAT = ThreadLocal.withInitial(() -> new DecimalFormat("##.##"));
 
@@ -23,7 +23,7 @@ public class HorseSpeedCommand implements CommandExecutor {
 			return true;
 		}
 
-		if (!sender.hasPermission(HorseSpeedMain.PERM_HORSE_SPEED)) {
+		if (!sender.hasPermission(HorseStatsMain.PERM_HORSE_SPEED)) {
 			sender.sendMessage(Message.NO_PERMISSIONS.get());
 			return true;
 		}
