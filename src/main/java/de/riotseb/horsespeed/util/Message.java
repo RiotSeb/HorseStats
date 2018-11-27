@@ -5,7 +5,9 @@ public enum Message {
 	PLAYER_ONLY("player only"),
 	NO_PERMISSIONS("no permissions"),
 	NOT_RIDING_A_HORSE("not riding a horse"),
-	STATS("stats");
+	STATS("stats"),
+	SPEED("speed"),
+	JUMP_STRENGTH("jump strength");
 
 	private String key;
 

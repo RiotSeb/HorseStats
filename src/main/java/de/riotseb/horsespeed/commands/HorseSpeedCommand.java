@@ -2,7 +2,6 @@ package de.riotseb.horsespeed.commands;
 
 import de.riotseb.horsespeed.HorseSpeedMain;
 import de.riotseb.horsespeed.util.Message;
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -43,8 +42,8 @@ public class HorseSpeedCommand implements CommandExecutor {
 		}
 
 		player.sendMessage(Message.STATS.get());
-		player.sendMessage(ChatColor.GRAY + " » Speed: " + ChatColor.GREEN + DECIMAL_FORMAT.get().format(getHorseSpeed(ridingHorse)) + " m/s");
-		player.sendMessage(ChatColor.GRAY + " » Jump strength: " + ChatColor.GREEN + DECIMAL_FORMAT.get().format(getHorseJumpHeight(ridingHorse)) + " blocks");
+		player.sendMessage(Message.SPEED.get().replace("%value%", DECIMAL_FORMAT.get().format(getHorseSpeed(ridingHorse))));
+		player.sendMessage(Message.JUMP_STRENGTH.get().replace("%value%", DECIMAL_FORMAT.get().format(getHorseJumpHeight(ridingHorse))));
 
 		return true;
 	}
